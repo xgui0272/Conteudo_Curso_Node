@@ -1,0 +1,20 @@
+<h1>Olá HandleBars</h1>
+
+{{#if appoved}}
+    <h3>Parabens vc foi aprovado</h3>
+{{else}}
+    <h3>Você não foi aprovado</h3>
+{{/if}}
+
+<p>O nome do usuario é {{user.name}} {{user.surname}}</p>
+
+{{#if auth}}
+    <h3>Voce está autenticado</h3>
+{{/if}}
+
+
+<ul>
+    {{#each itens}}
+        <li>{{this}}</li>
+    {{/each}}    
+</ul>
